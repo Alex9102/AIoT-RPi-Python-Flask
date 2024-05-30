@@ -1,0 +1,403 @@
+2024-05-30 20:55:53,543 [DEBUG] camera:: Stopping thread
+2024-05-30 20:55:53,605 [INFO] camera:: Thread stopped successfully
+2024-05-30 20:56:04,650 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2024-05-30 20:56:06,054 [DEBUG] camera:: Starting thread
+2024-05-30 20:56:06,055 [DEBUG] camera:: Observation started
+2024-05-30 20:56:06,055 [INFO] camera:: Thread started
+2024-05-30 20:56:20,686 [DEBUG] __main__:: Toggle Objectdetection is ON
+2024-05-30 20:56:20,688 [DEBUG] __main__:: Toggle Objectdetection is ON
+2024-05-30 20:56:20,978 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:21,274 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:21,567 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 20:56:21,870 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:22,160 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:22,454 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:22,454 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:22,455 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 20:56:22,455 [DEBUG] __main__:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:22,759 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 20:56:23,073 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 20:56:23,375 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 20:56:23,676 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:23,981 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:24,276 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:24,276 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:24,277 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 20:56:24,277 [DEBUG] __main__:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:24,597 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:24,894 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:25,205 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:25,513 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:25,816 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 20:56:26,118 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:26,119 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:26,119 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 20:56:26,119 [DEBUG] __main__:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:26,435 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:26,741 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:27,031 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 20:56:27,322 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 20:56:27,618 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:27,916 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:27,916 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:27,918 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 20:56:27,918 [DEBUG] __main__:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:28,237 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:28,532 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:28,827 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:29,144 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 20:56:29,447 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:29,750 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:29,750 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:29,751 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 20:56:29,751 [DEBUG] __main__:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:30,070 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:30,365 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:30,659 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:30,942 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 20:56:31,246 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:31,252 [DEBUG] __main__:: Toggle Objectdetection is OFF
+2024-05-30 20:56:31,535 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:31,535 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:31,536 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 20:56:31,536 [DEBUG] __main__:: Category Name : person , Confidence : 0.84375
+2024-05-30 20:56:53,295 [DEBUG] __main__:: Toggle Fire Detection is ON
+2024-05-30 20:56:53,297 [DEBUG] __main__:: Toggle Fire Detection is ON
+2024-05-30 20:56:54,363 [DEBUG] yolo:: No object detected
+2024-05-30 20:56:54,690 [DEBUG] yolo:: No object detected
+2024-05-30 20:56:55,723 [DEBUG] yolo:: No object detected
+2024-05-30 20:56:56,754 [DEBUG] yolo:: No object detected
+2024-05-30 20:56:58,156 [DEBUG] yolo:: No object detected
+2024-05-30 20:56:59,242 [DEBUG] yolo:: No object detected
+2024-05-30 20:56:59,601 [DEBUG] yolo:: No object detected
+2024-05-30 20:57:00,298 [DEBUG] yolo:: No object detected
+2024-05-30 20:57:00,651 [DEBUG] yolo:: No object detected
+2024-05-30 20:57:01,001 [DEBUG] yolo:: No object detected
+2024-05-30 20:57:01,376 [DEBUG] yolo:: No object detected
+2024-05-30 20:57:01,741 [DEBUG] yolo:: No object detected
+2024-05-30 20:57:02,094 [DEBUG] yolo:: No object detected
+2024-05-30 20:57:02,439 [DEBUG] yolo:: No object detected
+2024-05-30 20:57:03,501 [DEBUG] __main__:: Toggle Fire Detection is OFF
+2024-05-30 20:57:13,037 [DEBUG] camera:: Stopping thread
+2024-05-30 20:57:13,147 [INFO] camera:: Thread stopped successfully
+2024-05-30 21:04:01,641 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2024-05-30 21:04:03,085 [DEBUG] camera:: Starting thread
+2024-05-30 21:04:03,086 [DEBUG] camera:: Observation started
+2024-05-30 21:04:03,086 [INFO] camera:: Thread started
+2024-05-30 21:04:26,420 [DEBUG] __main__:: Toggle Objectdetection is ON
+2024-05-30 21:04:26,422 [DEBUG] __main__:: Toggle Objectdetection is ON
+2024-05-30 21:04:26,722 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:04:27,021 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:04:27,318 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:04:27,614 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:04:27,907 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:04:28,215 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.76953125
+2024-05-30 21:04:28,216 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.76953125
+2024-05-30 21:04:28,216 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:04:28,216 [DEBUG] __main__:: Category Name : person , Confidence : 0.76953125
+2024-05-30 21:04:28,547 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:04:28,854 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:04:29,149 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:04:29,451 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:04:29,742 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.76953125
+2024-05-30 21:04:30,058 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.76953125
+2024-05-30 21:04:30,059 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.76953125
+2024-05-30 21:04:30,060 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:04:30,060 [DEBUG] __main__:: Category Name : person , Confidence : 0.76953125
+2024-05-30 21:04:30,405 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:04:30,700 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:04:30,998 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:04:31,312 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:04:31,607 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:04:31,910 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:04:31,911 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.85546875
+2024-05-30 21:04:31,912 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:04:31,912 [DEBUG] __main__:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:04:32,228 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:04:32,528 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.8671875
+2024-05-30 21:04:32,838 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:04:33,133 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.88671875
+2024-05-30 21:04:33,429 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:04:33,735 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:04:33,736 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.85546875
+2024-05-30 21:04:33,736 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:04:33,737 [DEBUG] __main__:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:04:34,037 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:04:34,326 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:04:34,623 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:04:34,934 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.8671875
+2024-05-30 21:04:35,113 [DEBUG] __main__:: Toggle Objectdetection is OFF
+2024-05-30 21:04:35,234 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.87890625
+2024-05-30 21:11:50,020 [DEBUG] camera:: Stopping thread
+2024-05-30 21:11:50,071 [INFO] camera:: Thread stopped successfully
+2024-05-30 21:12:02,923 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2024-05-30 21:12:04,293 [DEBUG] camera:: Starting thread
+2024-05-30 21:12:04,294 [DEBUG] camera:: Observation started
+2024-05-30 21:12:04,294 [INFO] camera:: Thread started
+2024-05-30 21:12:15,889 [DEBUG] __main__:: Toggle Objectdetection is ON
+2024-05-30 21:12:15,891 [DEBUG] __main__:: Toggle Objectdetection is ON
+2024-05-30 21:12:16,188 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:12:16,485 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.75390625
+2024-05-30 21:12:16,784 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.76953125
+2024-05-30 21:12:17,070 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.73828125
+2024-05-30 21:12:17,357 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.75390625
+2024-05-30 21:12:17,649 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:12:17,649 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.7890625
+2024-05-30 21:12:17,650 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:12:17,650 [DEBUG] __main__:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:12:17,754 [DEBUG] __main__:: Toggle Objectdetection is ON
+2024-05-30 21:12:17,964 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.75390625
+2024-05-30 21:12:18,263 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:12:18,576 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:12:18,895 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:12:19,192 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:19,484 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:19,484 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:19,485 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:12:19,485 [DEBUG] __main__:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:19,813 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:12:20,110 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:20,411 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:12:20,703 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.76953125
+2024-05-30 21:12:21,009 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.69921875
+2024-05-30 21:12:21,297 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.546875
+2024-05-30 21:12:21,297 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.546875
+2024-05-30 21:12:21,298 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:12:21,298 [DEBUG] __main__:: Category Name : person , Confidence : 0.546875
+2024-05-30 21:12:21,499 [DEBUG] __main__:: Toggle Objectdetection is ON
+2024-05-30 21:12:21,607 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.61328125
+2024-05-30 21:12:21,910 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.75390625
+2024-05-30 21:12:22,220 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:12:22,524 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:22,819 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:12:23,113 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:12:23,113 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.83203125
+2024-05-30 21:12:23,114 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:12:23,114 [DEBUG] __main__:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:12:23,416 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:12:23,708 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:12:24,000 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:12:24,312 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:12:24,598 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:24,880 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:24,881 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:24,881 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:12:24,882 [DEBUG] __main__:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:25,195 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:12:25,511 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:25,806 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:12:26,112 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:12:26,414 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:26,715 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:26,715 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:26,716 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:12:26,716 [DEBUG] __main__:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:27,040 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:27,339 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:27,636 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:12:27,942 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:12:28,229 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:12:28,540 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:28,540 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:28,541 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:12:28,541 [DEBUG] __main__:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:12:28,857 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:12:29,145 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:12:29,437 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:12:29,557 [DEBUG] camera:: Stopping thread
+2024-05-30 21:12:29,588 [INFO] camera:: Thread stopped successfully
+2024-05-30 21:13:11,040 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2024-05-30 21:13:12,481 [DEBUG] camera:: Starting thread
+2024-05-30 21:13:12,483 [DEBUG] camera:: Observation started
+2024-05-30 21:13:12,483 [INFO] camera:: Thread started
+2024-05-30 21:14:06,344 [DEBUG] __main__:: Toggle Objectdetection is ON
+2024-05-30 21:14:06,346 [DEBUG] __main__:: Toggle Objectdetection is ON
+2024-05-30 21:14:06,640 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:06,936 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:14:07,228 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:07,550 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:07,832 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:08,114 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:08,115 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:08,116 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:14:08,116 [DEBUG] __main__:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:08,418 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:08,710 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:09,010 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:09,296 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:14:09,598 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:09,902 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:09,902 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:09,903 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:14:09,903 [DEBUG] __main__:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:10,252 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:10,559 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.8671875
+2024-05-30 21:14:10,862 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:14:11,168 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:11,484 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:11,800 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.87890625
+2024-05-30 21:14:11,801 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.87890625
+2024-05-30 21:14:11,802 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:14:11,803 [DEBUG] __main__:: Category Name : person , Confidence : 0.87890625
+2024-05-30 21:14:12,127 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:12,418 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.8671875
+2024-05-30 21:14:12,720 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:13,013 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:14:13,334 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:13,634 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:14:13,634 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.85546875
+2024-05-30 21:14:13,635 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:14:13,635 [DEBUG] __main__:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:14:13,935 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:14:14,230 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.8671875
+2024-05-30 21:14:14,535 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:14,821 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:15,116 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:15,431 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:15,432 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:15,432 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:14:15,432 [DEBUG] __main__:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:15,783 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:16,073 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:16,370 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:16,681 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:16,978 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:17,310 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:17,310 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:17,311 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:14:17,311 [DEBUG] __main__:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:17,636 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:17,925 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:18,219 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:18,510 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:18,804 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:14:19,131 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:19,131 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:19,132 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:14:19,132 [DEBUG] __main__:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:19,461 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:14:19,782 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:20,072 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.87890625
+2024-05-30 21:14:20,355 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:20,657 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:14:20,979 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:14:20,980 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.7890625
+2024-05-30 21:14:20,981 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:14:20,981 [DEBUG] __main__:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:14:21,291 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:21,605 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:14:21,905 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.73828125
+2024-05-30 21:14:22,196 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:22,479 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:14:22,781 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.75390625
+2024-05-30 21:14:22,781 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.75390625
+2024-05-30 21:14:22,782 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:14:22,782 [DEBUG] __main__:: Category Name : person , Confidence : 0.75390625
+2024-05-30 21:14:23,095 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:14:23,401 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:23,693 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:23,986 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:24,278 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:24,575 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:24,576 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:24,576 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:14:24,576 [DEBUG] __main__:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:24,891 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:25,210 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.84375
+2024-05-30 21:14:25,504 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:25,803 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:26,125 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:26,412 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.76953125
+2024-05-30 21:14:26,412 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.76953125
+2024-05-30 21:14:26,412 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:14:26,412 [DEBUG] __main__:: Category Name : person , Confidence : 0.76953125
+2024-05-30 21:14:26,722 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.7890625
+2024-05-30 21:14:27,007 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.76953125
+2024-05-30 21:14:27,318 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:27,618 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:14:27,924 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:28,216 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:28,216 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:28,217 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:14:28,217 [DEBUG] __main__:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:28,539 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.80078125
+2024-05-30 21:14:28,826 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.81640625
+2024-05-30 21:14:28,956 [DEBUG] __main__:: Toggle Objectdetection is OFF
+2024-05-30 21:14:29,126 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:36:23,537 [DEBUG] camera:: Stopping thread
+2024-05-30 21:36:23,579 [INFO] camera:: Thread stopped successfully
+2024-05-30 21:52:27,169 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2024-05-30 21:52:28,703 [DEBUG] camera:: Starting thread
+2024-05-30 21:52:28,704 [DEBUG] camera:: Observation started
+2024-05-30 21:52:28,704 [INFO] camera:: Thread started
+2024-05-30 21:52:55,150 [DEBUG] __main__:: Start stream
+2024-05-30 21:52:55,152 [DEBUG] __main__:: Start stream
+2024-05-30 21:52:55,156 [DEBUG] __main__:: Starting stream
+2024-05-30 21:53:24,250 [DEBUG] __main__:: Stop stream
+2024-05-30 21:53:24,252 [DEBUG] __main__:: Stop stream
+2024-05-30 21:53:26,688 [DEBUG] __main__:: Toggle Objectdetection is ON
+2024-05-30 21:53:26,690 [DEBUG] __main__:: Toggle Objectdetection is ON
+2024-05-30 21:53:26,997 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:53:27,307 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.85546875
+2024-05-30 21:53:27,622 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.83203125
+2024-05-30 21:53:27,927 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.87890625
+2024-05-30 21:53:28,232 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.87890625
+2024-05-30 21:53:28,534 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:28,831 [DEBUG] mpdetection:: Category Name : bed , Confidence : 0.5
+2024-05-30 21:53:29,132 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:29,447 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:29,754 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:30,053 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:30,394 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:30,704 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:30,990 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:31,274 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:31,581 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:31,881 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.5234375
+2024-05-30 21:53:31,882 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.5234375
+2024-05-30 21:53:31,882 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:53:31,883 [DEBUG] __main__:: Category Name : person , Confidence : 0.5234375
+2024-05-30 21:53:46,939 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:47,239 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:47,829 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.5234375
+2024-05-30 21:53:48,401 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:48,689 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:48,983 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:49,266 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:49,565 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:49,874 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:50,192 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:50,505 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:50,805 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:51,093 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:51,379 [DEBUG] mpdetection:: No object detected
+2024-05-30 21:53:51,671 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.5234375
+2024-05-30 21:53:51,970 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.546875
+2024-05-30 21:53:52,286 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.5703125
+2024-05-30 21:53:52,585 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.63671875
+2024-05-30 21:53:52,885 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.61328125
+2024-05-30 21:53:53,188 [DEBUG] mpdetection:: Category Name : person , Confidence : 0.546875
+2024-05-30 21:53:53,188 [DEBUG] mpdetection:: Got Positive Category Name : person , Confidence : 0.546875
+2024-05-30 21:53:53,189 [DEBUG] __main__:: Callback triggered from mpdetection background task
+2024-05-30 21:53:53,190 [DEBUG] __main__:: Category Name : person , Confidence : 0.546875
+2024-05-30 21:53:53,816 [DEBUG] __main__:: Toggle Objectdetection is OFF
+2024-05-30 22:07:05,569 [DEBUG] camera:: Stopping thread
+2024-05-30 22:07:05,617 [INFO] camera:: Thread stopped successfully
+2024-05-30 22:46:52,605 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2024-05-30 22:46:53,942 [DEBUG] camera:: Starting thread
+2024-05-30 22:46:53,943 [DEBUG] camera:: Observation started
+2024-05-30 22:46:53,943 [INFO] camera:: Thread started
+2024-05-30 22:47:24,375 [DEBUG] camera:: Stopping thread
+2024-05-30 22:47:24,431 [INFO] camera:: Thread stopped successfully
+2024-05-30 22:52:56,159 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2024-05-30 22:52:57,644 [DEBUG] camera:: Starting thread
+2024-05-30 22:52:57,645 [DEBUG] camera:: Observation started
+2024-05-30 22:52:57,645 [INFO] camera:: Thread started
+2024-05-30 22:54:04,362 [DEBUG] camera:: Stopping thread
+2024-05-30 22:54:04,425 [INFO] camera:: Thread stopped successfully
+2024-05-30 22:56:30,333 [INFO] camera:: Initializing camera class with 20 fps and video_source=0
+2024-05-30 22:56:31,728 [DEBUG] camera:: Starting thread
+2024-05-30 22:56:31,728 [DEBUG] camera:: Observation started
+2024-05-30 22:56:31,728 [INFO] camera:: Thread started
+2024-05-30 23:30:53,378 [DEBUG] camera:: Stopping thread
+2024-05-30 23:30:53,410 [INFO] camera:: Thread stopped successfully

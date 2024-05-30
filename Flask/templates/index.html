@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIoT Project Demo</title>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #d0e7ff, #004080);
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #004080;
+            color: #fff;
+        }
+        .header img {
+            height: 40px;
+        }
+        .header .login-status {  
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+        #loginText {
+            margin-right: 10px; /* 增加一些間距 */
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .tabs {
+            display: flex;
+            cursor: pointer;
+        }
+        .tabs div {
+            flex: 1;
+            padding: 10px 20px;
+            text-align: center;
+            background: #e0e0e0;
+            transition: background 0.3s ease;
+        }
+        .tabs div:hover {
+            background: #d0d0d0;
+        }
+        .tabs .active {
+            background: #fff;
+            border-bottom: 4px solid #004080;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .video-container {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .video-container img {
+            width: 100%;
+            display: block;
+            border-bottom: 4px solid #007bff;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .gauge-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+        .gauge {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #f0f0f0;
+            border-radius: 8px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+        .gauge canvas {
+            width: 90%;
+            height: 90%;
+        }
+        .gauge-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .gauge-value {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            border-radius: 8px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+        <div class="title">
+            <h1>AI Camera</h1>
+        </div>
+        <div id="loginStatus" class="login-status">
+            {% if logged_in %}
+                <span id="loginText">已登入 (使用者: {{ username }})</span>
+                <button id="loginButton">登出</button>
+            {% else %}
+                <span id="loginText">未登入</span>
+                <button id="loginButton">登入</button>
+            {% endif %}
+        </div>
+    </div>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active" data-tab="main">Main</div>
+            <div class="tab" data-tab="live-view" id="liveViewTab">Live View</div>
+            <div class="tab" data-tab="log-view" id="logViewTab">Log View</div>
+        </div>
+        <div class="tab-content active" id="main">
+            <h2>Raspberry Pi Model 4B</h2>
+            <div class="gauge-container">
+                <div class="gauge">
+                    <div class="gauge-title">CPU 使用率</div>
+                    <canvas id="cpuGauge"></canvas>
+                    <div class="gauge-value" id="cpuValue">0%</div>
+                </div>
+                <div class="gauge">
+                    <div class="gauge-title">存儲空間使用率</div>
+                    <canvas id="diskGauge"></canvas>
+                    <div class="gauge-value" id="diskValue">0GB/0GB (0%)</div>
+                </div>
+            </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <input type="checkbox" id="toggle-objectdetection" class="toggle-input">
+                    <label for="toggle1" class="toggle-label">保全偵測</label>
+                    <div id="textObjectDetectionResult"></div>
+                </div>
+                <div class="toggle">
+                    <input type="checkbox" id="toggle-firedetection" class="toggle-input">
+                    <label for="toggle2" class="toggle-label">火災預警</label>
+                    <div id="textFireDetectionResult"></div>
+                </div>
+            </div>
+            <button id="testButton">測試用</button>
+            <div id="textResult"></div>
+        </div>
+        <div class="tab-content" id="live-view">
+            <div class="video-container">
+                <img id="video" src="#" alt="Camera stream" style="display:none;">
+            </div>
+            <button id="toggleButton">Start Streaming</button>
+        </div>
+        <div id="log-view" class="tab-content">
+            <!-- <h2>Log View</h2> -->
+            <pre id="log-content">Loading logs...</pre>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm" style="display: flex; flex-direction: column;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <div class="button-container">
+                    <button type="button" id="confirmButton">Confirm</button>
+                    <button type="button" id="cancelButton">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <!-- <script>
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        const video = document.getElementById('video');
+        const toggleButton = document.getElementById('toggleButton');
+        let cameraOn = false;
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                if (tab.getAttribute('id') === 'liveViewTab' && !tab.classList.contains('enabled')) {
+                    return;
+                }
+                document.querySelector('.tab.active').classList.remove('active');
+                tab.classList.add('active');
+                const activeTabContent = document.querySelector('.tab-content.active');
+                if (activeTabContent) {
+                    activeTabContent.classList.remove('active');
+                }
+                const target = tab.getAttribute('data-tab');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+
+        toggleButton.addEventListener('click', () => {
+            if (cameraOn) {
+                fetch('/control_camera', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ action: 'stop' })
+                }).then(response => response.json()).then(data => {
+                    if (data.success) {
+                        video.style.display = 'none';
+                        video.src = '#';
+                        toggleButton.textContent = 'Start Camera';
+                        cameraOn = false;
+                    }
+                });
+            } else {
+                fetch('/control_camera', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ action: 'start' })
+                }).then(response => response.json()).then(data => {
+                    if (data.success) {
+                        video.src = '/video_feed';
+                        video.style.display = 'block';
+                        toggleButton.textContent = 'Stop Camera';
+                        cameraOn = true;
+                    }
+                });
+            }
+        });
+
+        const cpuGaugeCtx = document.getElementById('cpuGauge').getContext('2d');
+        const diskGaugeCtx = document.getElementById('diskGauge').getContext('2d');
+        const cpuGauge = new Chart(cpuGaugeCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Used', 'Free'],
+                datasets: [{
+                    data: [0, 100],
+                    backgroundColor: ['#ff6384', '#36a2eb'],
+                    hoverBackgroundColor: ['#ff6384', '#36a2eb']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: {
+                        enabled: false
+                    }
+                },
+                cutout: '70%',
+                rotation: -90,
+                circumference: 180
+            }
+        });
+
+        const diskGauge = new Chart(diskGaugeCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Used', 'Free'],
+                datasets: [{
+                    data: [0, 100],
+                    backgroundColor: ['#ff6384', '#36a2eb'],
+                    hoverBackgroundColor: ['#ff6384', '#36a2eb']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: {
+                        enabled: false
+                    }
+                },
+                cutout: '70%',
+                rotation: -90,
+                circumference: 180
+            }
+        });
+
+        function updateGauges() {
+            fetch('/system_stats')
+                .then(response => response.json())
+                .then(data => {
+                    cpuGauge.data.datasets[0].data[0] = data.cpu_usage;
+                    cpuGauge.data.datasets[0].data[1] = 100 - data.cpu_usage;
+                    cpuGauge.update();
+
+                    diskGauge.data.datasets[0].data[0] = data.disk_usage_percent;
+                    diskGauge.data.datasets[0].data[1] = 100 - data.disk_usage_percent;
+                    diskGauge.update();
+
+                    document.getElementById('cpuValue').innerText = `${data.cpu_usage}%`;
+                    document.getElementById('diskValue').innerText = `${data.disk_free.toFixed(2)}GB/${data.disk_total.toFixed(2)}GB (${data.disk_usage_percent}%)`;
+                });
+        }
+
+        setInterval(updateGauges, 10000);
+        updateGauges();
+
+        // Login modal logic
+        const loginModal = document.getElementById("loginModal");
+        const loginButton = document.getElementById("loginButton");
+        const closeButton = document.getElementsByClassName("close")[0];
+        const confirmButton = document.getElementById("confirmButton");
+        const cancelButton = document.getElementById("cancelButton");
+        const liveViewTab = document.getElementById("liveViewTab");
+
+        loginButton.onclick = function() {
+            if (loginButton.innerText === "登出") {
+                if (confirm("確定要登出嗎？")) {
+                    document.getElementById("loginText").innerText = "未登入";
+                    loginButton.innerText = "登入";
+                    liveViewTab.classList.remove('enabled');
+                    liveViewTab.style.pointerEvents = "none";
+                    liveViewTab.style.color = "gray";
+                }
+            } else {
+                loginModal.style.display = "block";
+            }
+        }
+
+        closeButton.onclick = function() {
+            loginModal.style.display = "none";
+        }
+
+        cancelButton.onclick = function() {
+            loginModal.style.display = "none";
+        }
+
+        confirmButton.onclick = function() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            if (username === "admin" && password === "password") {
+                document.getElementById("loginText").innerText = "已登入 (使用者: admin)";
+                loginButton.innerText = "登出";
+                loginModal.style.display = "none";
+                liveViewTab.classList.add('enabled');
+                liveViewTab.style.pointerEvents = "auto";
+                liveViewTab.style.color = "black";
+            } else {
+                alert("登入失敗，請檢查您的用戶名和密碼。");
+            }
+        }
+
+        // window.onclick = function(event) {
+        //     if (event.target === loginModal) {
+        //         loginModal.style.display = "none";
+        //     }
+        // }
+
+        // Initially disable live view tab
+        liveViewTab.classList.remove('enabled');
+        liveViewTab.style.pointerEvents = "none";
+        liveViewTab.style.color = "gray";
+    </script> -->
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginText = document.getElementById("loginText");
+            const loginButton = document.getElementById("loginButton");
+            const loginModal = document.getElementById("loginModal");
+            const liveViewTab = document.getElementById("liveViewTab");
+            const loggedIn = {{ logged_in|tojson }};
+            
+            if (loggedIn) {
+                loginText.innerText = "已登入 (使用者: admin)";
+                loginButton.innerText = "登出";
+                loginModal.style.display = "none";
+                liveViewTab.classList.add('enabled');
+                liveViewTab.style.pointerEvents = "auto";
+                liveViewTab.style.color = "black";
+            } else {
+                liveViewTab.classList.remove('enabled');
+                liveViewTab.style.pointerEvents = "none";
+                liveViewTab.style.color = "gray";
+            }
+        });
+    </script>
+</body>
+</html>
